@@ -1,0 +1,24 @@
+Criar Order:
+
+{
+    "data": "2025-08-23T10:35:22",
+    "user": {
+        "id": 2
+    },
+    "address": {
+        "id": 2
+    }
+}
+
+Criar itens Order:
+
+{
+    "order": {
+        "id": 3
+    },
+    "product": {
+        "id": 2
+    },
+    "quantity": 2,
+    "unit_price": 2551.0
+}
