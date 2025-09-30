@@ -37,7 +37,6 @@ public class User implements UserDetails {
     @NotNull
     @Size(min = 6)
     @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).*$")
-    @JsonIgnore
     private String password;
 
     @Override
