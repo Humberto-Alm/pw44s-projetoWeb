@@ -22,7 +22,7 @@ INSERT INTO tb_address(user_id, city, logradouro, numero, bairro, complemento, c
 INSERT INTO tb_address(user_id, city, logradouro, numero, bairro, complemento, cep) VALUES (2, 'São Lourenço do Oeste', 'Rua Rio de Janeiro', 85, 'Perpétuo Socorro', 'Casa com barracão', '89990000');
 INSERT INTO tb_address(user_id, city, logradouro, numero, bairro, complemento, cep) VALUES (2, 'Pato Branco', 'Rua Taubaté', 231, 'São Roque', 'Apartamento', '87654321');
 
-INSERT INTO tb_order(data, user_id, address_id) VALUES ('2025-08-23T10:35:22', 1, 2);
+INSERT INTO tb_order(data, user_id, address_id) VALUES ('2025-08-23T10:35:22', 1, 1);
 INSERT INTO tb_order(data, user_id, address_id) VALUES ('2025-09-24T13:55:03', 2, 3);
 
 INSERT INTO tb_order_itens(order_id, product_id, quantity, unit_price) VALUES (1, 2, 5, 2449.0);
