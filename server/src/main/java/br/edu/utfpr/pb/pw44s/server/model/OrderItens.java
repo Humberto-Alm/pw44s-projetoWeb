@@ -1,15 +1,16 @@
 package br.edu.utfpr.pb.pw44s.server.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIdentityReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 @Entity
 @Table(name = "tb_order_itens")
@@ -23,7 +24,8 @@ public class OrderItens {
 
     @ManyToOne
     @JoinColumn(name = "order_id")
-    @JsonIgnore
+    @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+    @JsonIdentityReference(alwaysAsId = true)
     private Order order;
 
     @ManyToOne

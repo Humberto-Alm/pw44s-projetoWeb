@@ -25,8 +25,8 @@ INSERT INTO tb_address(user_id, city, logradouro, numero, bairro, complemento, c
 INSERT INTO tb_order(data, user_id, address_id) VALUES ('2025-08-23T10:35:22', 1, 2);
 INSERT INTO tb_order(data, user_id, address_id) VALUES ('2025-09-24T13:55:03', 2, 3);
 
-INSERT INTO tb_order_itens(order_id, product_id, quantity, unit_price) VALUES (1, 2, 1, 2449.0);
-INSERT INTO tb_order_itens(order_id, product_id, quantity, unit_price) VALUES (1, 4, 1, 199.0);
+INSERT INTO tb_order_itens(order_id, product_id, quantity, unit_price) VALUES (1, 2, 5, 2449.0);
+INSERT INTO tb_order_itens(order_id, product_id, quantity, unit_price) VALUES (1, 4, 2, 199.0);
 INSERT INTO tb_order_itens(order_id, product_id, quantity, unit_price) VALUES (2, 1, 1, 1990.0);
 INSERT INTO tb_order_itens(order_id, product_id, quantity, unit_price) VALUES (2, 8, 2, 1299.0);
 
