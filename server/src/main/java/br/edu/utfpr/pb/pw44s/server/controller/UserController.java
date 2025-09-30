@@ -1,6 +1,8 @@
 package br.edu.utfpr.pb.pw44s.server.controller;
 
+import br.edu.utfpr.pb.pw44s.server.DTO.OrderDTO;
 import br.edu.utfpr.pb.pw44s.server.error.ApiError;
+import br.edu.utfpr.pb.pw44s.server.model.Order;
 import br.edu.utfpr.pb.pw44s.server.model.User;
 import br.edu.utfpr.pb.pw44s.server.repository.UserRepository;
 import br.edu.utfpr.pb.pw44s.server.service.UserService;
@@ -8,13 +10,16 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/users")
@@ -42,4 +47,5 @@ public class UserController {
 
         return new ApiError("ValidationError", HttpStatus.BAD_REQUEST.value(), request.getServletPath(), errors);
     }
+
 }
