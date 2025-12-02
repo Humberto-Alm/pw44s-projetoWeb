@@ -1,0 +1,132 @@
+.layout-fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.layout-main-content {
+    padding-top: 130px; 
+    flex: 1;
+    background-color: #f4f4f4;
+    min-height: calc(100vh - 70px);
+}
+
+.underbar-nav {
+    background-color: #800000;
+    border-top: 1px solid #5c0000;
+    padding: 0.5rem 0;
+    width: 100%;
+    
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
+    
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
+    
+    display: flex;
+    align-items: center; 
+}
+
+.underbar-nav::-webkit-scrollbar { 
+    display: none; 
+}
+
+.underbar-list {
+    margin: 0;
+    padding: 0 1rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start; 
+    gap: 1rem;
+    width: 100%;
+    align-items: center; 
+}
+
+.underbar-item-span {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    padding: 0.5rem 0.8rem; 
+    display: block;
+    border-radius: 4px;
+    transition: color 0.2s, background-color 0.2s;
+    white-space: nowrap; 
+}
+
+.underbar-item-span:hover {
+    color: #e0e0e0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.layout-footer {
+    background-color: #5c0000;
+    color: whitesmoke;
+    padding: 5px 0; 
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    align-items: flex-start;
+}
+
+.footer-column {
+    flex: 1 1 300px;
+    color: rgb(177, 177, 177);
+    margin-bottom: 0.5rem; 
+}
+
+.footer-column h5 {
+    margin-bottom: 5px; 
+    font-size: 1rem;    
+}
+
+.footer-column p, .footer-column a {
+    font-size: 0.85rem; 
+    line-height: 1.3;   
+}
+
+.footer-link-privacy {
+    color: #428bca;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem; 
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 0.5rem; 
+    font-size: 0.75rem; 
+    color: rgb(177, 177, 177);
+}
+
+@media (min-width: 900px) {
+    .underbar-list {
+        justify-content: center; 
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .underbar-list {
+        gap: 2rem; 
+    }
+}

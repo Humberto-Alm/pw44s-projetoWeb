@@ -1,0 +1,26 @@
+#root {
+  min-height: 100vh;
+}
+
+.search-box {
+    display: flex;
+    width: 30%;
+    height: 2.8rem;
+    background-color: #ffff;
+    border-radius: 5px;
+}
+
+.search-input {
+    width: 85%;
+    border: none;
+    outline: none;
+    margin-left: 2%;
+    font-size: 1.4rem;
+}
+
+.search-icon {
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+    cursor: pointer;
+}

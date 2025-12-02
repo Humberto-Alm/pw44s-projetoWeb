@@ -1,0 +1,107 @@
+.cart-container {
+    min-height: 60vh;
+    max-width: 1200px;
+}
+
+.cart-title {
+    color: #2e0000;
+}
+
+.cart-product-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.summary-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px; 
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
+    height: fit-content; 
+    position: sticky;
+    top: 100px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.freight-badge {
+    background-color: #dcfce7; 
+    color: #2ecc71; 
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.btn-continue-shopping {
+    background-color: #6c757d !important;
+    border: 1px solid #6c757d !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.btn-continue-shopping:hover {
+    background-color: #5a6268 !important;
+    border-color: #545b62 !important;
+}
+
+.btn-finalize {
+    background-color: #2ecc71 !important;
+    border: none !important;
+    color: white !important;
+    padding: 1rem !important;
+    font-weight: bold !important;
+    width: 100%;
+    font-size: 1.1rem !important;
+    transition: background-color 0.2s;
+}
+
+.btn-finalize:hover {
+    background-color: #27ae60 !important;
+}
+
+.btn-clear-cart {
+    font-size: 0.875rem !important;
+}
+
+.security-text {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.cart-quantity-input .p-inputnumber-button {
+    background-color: #5c0000 !important; 
+    border-color: #5c0000 !important;
+    color: white !important;
+}
+
+.cart-quantity-input .p-inputnumber-button:hover {
+    background-color: #7a0000 !important; 
+    border-color: #7a0000 !important;
+}
+
+.cart-quantity-input .p-inputtext {
+    text-align: center;
+    font-weight: bold;
+    color: #333; 
+}
+
+.btn-start-shopping {
+    background-color: #800000 !important;
+    border: 1px solid #800000 !important;
+    color: white !important; 
+    font-weight: bold !important;
+    padding: 0.8rem 1.5rem !important;
+}
+
+.btn-start-shopping:hover {
+    background-color: #5c0000 !important; 
+    border-color: #5c0000 !important;
+}

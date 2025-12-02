@@ -1,0 +1,89 @@
+Criar user:
+
+{
+    "username": "usuario",
+    "displayName": "User",
+    "password": "/Senha123"
+}
+
+Login:
+
+{
+    "username": "usuario",
+    "password": "/Senha123"
+}
+
+Criar Produto:
+
+{
+    "name": "produto",
+    "description": "descricao do produto",
+    "price": 255.0,
+    "category": {
+        "id": 6
+    },
+    "url_image": "endereco"
+}
+
+Criar Address:
+
+{
+    "user": {
+        "id": 3
+    },
+    "city": "Pato Branco",
+    "logradouro": "Rua da frente",
+    "numero": "99",
+    "bairro": "Menino Deus",
+    "complemento": "predio",
+    "cep": "09991111"
+}
+
+Criar Order:
+
+{
+    "data": "2025-08-23T10:35:22",
+    "address": {
+        "id": 2
+    }
+}
+
+Criar itens Order:
+
+{
+    "order": {
+        "id": 3
+    },
+    "product": {
+        "id": 2
+    },
+    "quantity": 2,
+    "unit_price": 2551.0
+}
+
+Criar ordem com itens:
+
+{
+    "data": "2025-08-23T10:35:22",
+    "address": {
+        "id": 2
+    },
+    "items": [
+        {
+            "productId": 2,
+            "quantity": 2,
+            "unit_price": 2551.0
+        },
+        {
+            "productId": 5,
+            "quantity": 1,
+            "unit_price": 1500.0
+        },
+        {
+            "productId": 8,
+            "quantity": 3,
+            "unit_price": 750.0
+        }
+    ]
+}
+

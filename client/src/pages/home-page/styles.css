@@ -1,0 +1,21 @@
+.produtos-container {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+
+@media screen and (max-width: 950px) {
+    .produtos-container {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .produtos-container {
+        grid-template-columns: 1fr;
+    }
+}

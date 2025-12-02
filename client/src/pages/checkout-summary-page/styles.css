@@ -1,0 +1,120 @@
+.summary-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    min-height: 80vh;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.info-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #800000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.info-content p {
+    margin: 0.3rem 0;
+    color: #555;
+}
+
+.products-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-item {
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.product-item:last-child { border-bottom: none; }
+
+.prod-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 1rem;
+    border: 1px solid #eee;
+}
+
+.prod-details { flex: 1; }
+.prod-name { font-weight: bold; color: #333; display: block; }
+.prod-qty { font-size: 0.9rem; color: #666; }
+.prod-price { font-weight: bold; color: #333; }
+
+.totals-card {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+.total-row.final {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #ddd;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #800000;
+}
+
+.btn-finish-order {
+    background-color: #03c20c; 
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-finish-order:hover {
+    background-color: #029a09;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .summary-grid { grid-template-columns: 1fr; }
+    .totals-card { position: static; }
+}

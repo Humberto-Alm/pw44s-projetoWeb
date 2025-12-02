@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+:root {
+  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --primary-color: rgb(167, 42, 42) !important;
+  --primary-dark: rgb(130, 30, 30) !important;
+  --text-color: #333;
+  
+  --bg-color: #e0e0e0; 
+  
+  --white: #ffffff;
+  --gray-light: #f8f9fa; 
+  --error-color: red;
+
+  --primary-50: #fbf2f2 !important;
+  --primary-100: #f5e0e0 !important;
+  --primary-200: #ecc4c4 !important;
+  --primary-300: #e09e9e !important;
+  --primary-400: #d17070 !important;
+  --primary-500: rgb(167, 42, 42) !important;
+  --primary-600: rgb(130, 30, 30) !important;
+  --primary-700: #942424 !important;
+  --primary-800: #751d1d !important;
+  --primary-900: #611818 !important;
+  
+  --blue-500: rgb(167, 42, 42) !important;
+  --blue-600: rgb(130, 30, 30) !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color); 
+  min-height: 100vh;
+  width: 100%; 
+}
+
+.input-field {
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: var(--white); 
+    border-radius: 8px;
+    padding: 0 15px;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #ccc; 
+}
+
+.p-password { width: 100%; }
+.p-password-input {
+    width: 100%;
+    background-color: var(--white);
+    border: 1px solid #ccc;
+    padding: 12px 15px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 8px;
+}
+.p-password-input:focus {
+    box-shadow: 0 0 0 2px var(--primary-color) !important;
+}
+
+.p-button {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+.p-button:hover {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
+
+.p-invalid { border: 2px solid var(--error-color) !important; }
+.error-msg {
+    color: var(--error-color);
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+.btn-second {
+    background-color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+    color: var(--white) !important;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-second:hover {
+    background-color: var(--white) !important;
+    color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: transparent !important;
+    border: 1px solid var(--white) !important;
+    color: var(--white) !important;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background-color: var(--white) !important;
+    color: var(--primary-color) !important;
+}
+
+.text-green-600 { color: #2ecc71 !important; }
+.bg-green-100 { background-color: #dcfce7 !important; }
+
+.p-datatable .p-datatable-thead > tr > th {
+    background-color: #f8f9fa;
+    color: #495057;
+    border-bottom: 2px solid #dee2e6;
+}
